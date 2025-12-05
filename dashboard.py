@@ -44,7 +44,8 @@ with st.sidebar:
     st.subheader("📅 Date Range")
     date_filter = st.selectbox(
         "Select Period",
-        ["Last 7 Days", "Last 30 Days", "Last 90 Days", "All Time", "Custom Range"]
+        ["Last 7 Days", "Last 30 Days", "Last 90 Days", "All Time", "Custom Range"],
+        index=3  # 👈 sets "All Time" as default
     )
 
     if date_filter == "Custom Range":
